@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/weather",
+      "destination": "https://api.testadenevill.com/api/weather"
+    },
+    {
+      "source": "/api/aqi",
+      "destination": "https://api.testadenevill.com/api/aqi"
+    },
+    {
+      "source": "/api/contact",
+      "destination": "https://api.testadenevill.com/api/contact"
+    }
+  ]
+}
