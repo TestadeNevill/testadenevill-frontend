@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
+import { LoadScript } from "@react-google-maps/api";
 import LiveDashboard from './pages/LiveDashboard';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
@@ -11,6 +12,10 @@ import TransitHubs from "./pages/blog/TransitHubs";
 
 function App() {
   return (
+     <LoadScript
+            googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_KEY}
+            libraries={["places"]}
+          >
     <div className="min-h-screen bg-gray-100">
       <Navbar />
       <Routes>
@@ -24,6 +29,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
+    </LoadScript>
   );
 }
 
