@@ -23,8 +23,7 @@ const projects = [
     "A live data dashboard visualizing real-time weather and traffic to help plan responsive urban infrastructure.",
   image: "/assets/livedashboard.png",
   tools: ["React", "OpenWeatherMap API", "Google Maps", "Axios", "Chart.js"],
-  demo: "https://testadenevill.com/live-dashboard",
-  demo:"http://localhost:5000/live-dashboard"
+  demo: "https://testadenevill.com/live-dashboard"
 },
  {
     title: "Futuristic Transit Hub",
