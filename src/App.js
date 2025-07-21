@@ -4,7 +4,6 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import { LoadScript } from "@react-google-maps/api";
-import LiveDashboard from './pages/LiveDashboard';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import Transshipment from "./pages/blog/Transshipment";
@@ -22,7 +21,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/live-dashboard" element={<LiveDashboard />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/Transshipment" element={<Transshipment />} />
         <Route path="/blog/transit-hubs" element={<TransitHubs />} />
