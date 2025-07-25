@@ -1,4 +1,4 @@
-import { BrowserRouter } from 'react-router-dom';
+// import { BrowserRouter } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
@@ -12,7 +12,7 @@ import TransitHubs from "./pages/blog/TransitHubs";
 
 function App() {
   return (
-<BrowserRouter>
+// {/* <BrowserRouter> */}
     <div className="min-h-screen bg-gray-100">
       <Navbar />
       <Routes>
@@ -26,7 +26,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
-    </BrowserRouter>
+    // </BrowserRouter>
  
   );
 }

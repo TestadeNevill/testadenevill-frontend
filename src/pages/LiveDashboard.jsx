@@ -21,7 +21,8 @@ const LiveDashboard = () => {
 
 const fetchData = async (lat = 34.0522, lng = -118.2437) => {
   try {
-    const res = await fetch(`/api/live-dashboard?lat=${lat}&lng=${lng}`);
+    const API_BASE = process.env.REACT_APP_API_BASE_URL;
+    const res = await fetch(`${API_BASE}/api/live-dashboard?lat=${lat}&lng=${lng}`);
     const text = await res.text(); // <- TEMP: use text to debug
     console.log("Raw response text:", text); // <- see what you really got
     const json = JSON.parse(text); // Try to parse it manually
